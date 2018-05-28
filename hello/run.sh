@@ -10,6 +10,3 @@ docker run --rm --name appsvr -p 80:8080 -v $(pwd)/build/libs/:/opt/jboss/wildfl
 
 # Java EE 8 servers
 #docker run --rm --name appsvr -p 80:8080 -v $(pwd)/build/libs/:/opt/jboss/wildfly/standalone/deployments/ jboss/wildfly:12.0.0.Final /opt/jboss/wildfly/bin/standalone.sh --server-config=standalone-full.xml -b "0.0.0.0" -Dee8.preview.mode=true
-
-
-#docker run --rm --name appsvr -p 80:8080 dplatz/hello /opt/jboss/wildfly/bin/standalone.sh --server-config=standalone-full.xml -b "0.0.0.0"
