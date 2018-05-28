@@ -1,0 +1,2 @@
+rootProject.name = 'hello-st'
+enableFeaturePreview("IMPROVED_POM_SUPPORT")

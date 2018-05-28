@@ -1,0 +1,2 @@
+rootProject.name = 'hello'
+enableFeaturePreview("IMPROVED_POM_SUPPORT")
