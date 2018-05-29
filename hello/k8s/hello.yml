@@ -17,6 +17,14 @@ spec:
         image: dplatz/hello:latest
         ports:
         - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /hello/resources/health
+            port: 8080
+        readinessProbe:
+          httpGet:
+            path: /hello/resources/health
+            port: 8080
 ---
 apiVersion: v1
 kind: Service
