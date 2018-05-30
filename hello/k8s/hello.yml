@@ -14,7 +14,9 @@ spec:
     spec:
       containers:
       - name: hello
-        image: dplatz/hello:latest
+        image: 38leinad/hello:latest
+        imagePullPolicy: Always
+        restartPolicy: Always
         ports:
         - containerPort: 8080
         livenessProbe:
